@@ -57,7 +57,7 @@ declare module "@sanity/block-content-to-react"
        * />
        * ```
        */
-      types: Record<string, (props: any) => JSX.Element | null>
+      types?: Record<string, (props: any) => JSX.Element | null>
       /**
        * Serializers for marks - data that annotates a text child of a block.
        * @example
@@ -91,18 +91,18 @@ declare module "@sanity/block-content-to-react"
        * />
        * ```
        */
-      marks: Record<string, (props: any) => JSX.Element | null>
+      marks?: Record<string, (props: any) => JSX.Element | null>
       /** React component to use when rendering a list node */
-      list: React.Component
+      list?: React.Component
       /** React component to use when rendering a list item node */
-      listItem: React.Component
+      listItem?: React.Component
       /**
        * React component to use when transforming newline characters
        * to a hard break (<br/> by default, pass false to render newline character)
        */
-      hardBreak: React.Component
+      hardBreak?: React.Component
       /** Serializer for the container wrapping the blocks */
-      container: React.Component
+      container?: React.Component
     }
     /**
      * When encountering image blocks,
